@@ -3,9 +3,6 @@ Definition of forms.
 """
 
 import email
-from email import message
-from random import choices
-from turtle import home
 from django import forms
 from django.forms.formsets import MIN_NUM_FORM_COUNT
 from django.contrib.auth.forms import AuthenticationForm
