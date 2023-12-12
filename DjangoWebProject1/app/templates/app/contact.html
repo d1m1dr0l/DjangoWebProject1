@@ -1,0 +1,20 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<address>
+    Prokhor's Main Coon <br />
+    Адрес: д. Видовичи <br />
+    <abbr title="Телефон"> Телефон: </abbr>
+    <a href="tel:+78888989999"> +78888989999 </a>
+</address>
+
+<address>
+    <strong> Поддержка: </strong>   <a href="mailto:Support@example.com">Тех. поддержка</a><br />
+    <strong> Юр. отдел: </strong> <a href="mailto:Marketing@example.com">Юр. отдел</a>
+</address>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8492.241072218865!2d28.01167428095477!3d57.8512245829182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eaa1f2bb3148cb%3A0x11542a8aefab52f4!2z0JLQuNC00L7QstC40YfQuCwg0J_RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE4MTUyMg!5e0!3m2!1sru!2sru!4v1702402583316!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}

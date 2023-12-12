@@ -1,0 +1,13 @@
+﻿{% extends "app/layout.html" %}
+{% load staticfiles %}
+{% block content %}
+<div>
+    <img class="img" src="{% static 'app/content/viki.jpg' %}" alt="Logo 1" /> <a href="https://ru.wikipedia.org/wiki/Мейн-кун" target="_blank" class="btn btn-primary b3">  Подробнее о кунах) </a><br>
+    <br>
+    <img class="img" src="{% static 'app/content/dzen.jpg' %}" alt="Logo 1" /> <a href="https://dzen.ru/a/YUyIoiNWkjuXm9X3" target="_blank" class="btn btn-primary b3">  Об окрасах мейнкунов </a><br>
+    <br>
+    <img class="img" src="{% static 'app/content/yandex.jpg' %}" alt="Logo 1" /> <a href="https://yandex.ru/images/search?from=tabbar&text=мейн-кун" target="_blank" class="btn btn-primary b3">  Фотографии кунов </a>
+</div>
+
+
+{% endblock %}

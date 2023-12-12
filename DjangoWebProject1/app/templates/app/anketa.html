@@ -1,0 +1,41 @@
+﻿{% extends "app/layout.html" %}
+{% block content%}
+{% if form != None %}
+<h2 align="left"> Отправьте заполненную форму </h2>
+<br>
+<div>
+    <form method="post" align="left">
+        {% csrf_token %}
+        <label for="{{ form.kot.id_for_label }}">{{ form.kot.label }}:</label>
+        {{ form.kot }} <br><br>
+        <label for="{{ form.name.id_for_label }}">{{ form.name.label }}:</label>
+        {{ form.name }} <br><br>
+        <label for="{{ form.city.id_for_label }}">{{ form.city.label }}</label>
+        {{ form.city }} <br><br>
+        <label for="{{ form.home.id_for_label }}">{{ form.home.label }}</label>
+        {{ form.home }} <br><br>
+        <label for="{{ form.message.id_for_label }}">{{ form.message.label }}:</label>
+        {{ form.message }} <br><br>
+        <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}:</label>
+        {{ form.phone }} <br><br>
+        <label for="{{ form.email.id_for_label }}">{{ form.email.label }}:</label>
+        {{ form.email }} <br><br>
+
+        <button class="button" type="submit"> Отправить форму </button>
+    </form>
+</div>
+{% else %}
+<br>
+<h2> Спасибо за заполнение формы! </h2>
+<h3> Вы предоставили следующую информацию о себе: </h3>
+<ul>
+    <li><span> Кто вам приглянулся? </span> {{ data.kot }}</li>
+    <li><span> Ваше имя: </span> {{ data.name }}</li>
+    <li><span> Город проживания: </span> {{ data.city }}</li>
+    <li><span> Место проживания: </span> {{ data.home }}</li>
+    <li><span> Информация о себе: </span> {{ data.message }}</li>
+    <li><span> Ваш номер телефона: </span> {{ data.phone }}</li>
+    <li><span> Ваша почта: </span> {{ data.email }}</li>
+</ul>
+{% endif %}
+{% endblock %}

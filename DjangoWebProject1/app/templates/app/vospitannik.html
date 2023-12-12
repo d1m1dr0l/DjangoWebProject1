@@ -1,0 +1,28 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+{% load static %}
+<h2> {{kotik_1.klichka}} </h2>
+<div id="foto">
+    {% if kotik_1.foto1 and kotik_1.foto1.url != '/media/temp.jpg' %}
+    <img src="{{ kotik_1.foto1.url }}" alt="Картинка для профиля" width="500" , height="300" />
+    {% endif %}
+    {% if kotik_1.foto2 and kotik_1.foto2.url != '/media/temp.jpg' %}
+    <img src="{{ kotik_1.foto2.url }}" alt="Картинка для профиля" width="500" , height="300" />
+    {% endif %}
+</div>
+<div id="foto">
+    {% if kotik_1.foto3 and kotik_1.foto3.url != '/media/temp.jpg' %}
+    <img src="{{ kotik_1.foto3.url }}" alt="Картинка для профиля" width="500" , height="300" />
+    {% endif %}
+    {% if kotik_1.foto4 and kotik_1.foto4.url != '/media/temp.jpg' %}
+    <img src="{{ kotik_1.foto4.url }}" alt="Картинка для профиля" width="500" , height="300" />
+    {% endif %}
+</div>
+<p> {{kotik_1.opisanie|linebreaksbr}} </p>
+
+<a href="{% url 'kotblog' %}" class="btn btn-primary b1"> Назад </a>
+
+<a href="{% url 'anketa' %}" class="btn btn-primary b2"> Заполнить форму </a>
+
+
+{% endblock %}

@@ -1,0 +1,90 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+{% load static %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox" width="600" height="1080">
+        <div class="item active">
+            <img src="{% static 'app/content/banner1.jpg'%} " alt="Первый слайд" class="img-responsive" width="1200" height="700" />
+            <div class="carousel-caption" role="option">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'app/content/banner2.jpg'%}" alt="Второй слайд" class="img-responsive" width="1200" height="700" />
+            <div class="carousel-caption" role="option">
+                <p>
+
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src=" {% static 'app/content/banner3.jpg'%} " alt="Третий слайд" class="img-responsive" width="1200" height="700" />
+            <div class="carousel-caption" role="option">
+                <p>
+
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+
+
+<div class="jumbotron">
+    <h1> Prokhor's Main Coon </h1>
+    <p class="lead">Добро пожаловать в питомник мейн-кунов “Prokhor's Maine Coon”!</p> <br>
+    <p>Мы рады представить вам наших замечательных котофеев, которые станут верными друзьями и полноправными членами вашей семьи.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2> Замурчательный блог ;) </h2>
+        <p>
+            Перейдя в блог, вы сможете прочитать разнообразные статьи,
+            в которых сможете узнать что-то новое и интересное о братьях
+            наших меньших.
+        </p>
+        <p><a class="btn btn-primary b5" href="/blog/"> Пойдём в блог &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2> Пушистые ресурсы :Ь </h2>
+        <p>
+            Кому-то где-нибудь могли однажды приглянуться котофеи данной породы,
+            но не знаете их историю или виды расцветок, или просто хотите посмотреть на них
+            в маленьком возрасте и, когда уже наберут вес и форму, то смело нажимайте
+            на кнопку ниже.
+        </p>
+        <p><a class="btn btn-primary b6" href="/links/"> Пушистые полезности &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2> Регистрация </h2>
+        <p>
+            Если после всего этого вы решились преобрести себе в семью пушистого
+            члена семьи, то сперва зарегестрируйтесь, а потом возвращайтесь на
+            вкладку "Наши воспитанники" и заполняйте форму.
+        </p>
+        <p><a class="btn btn-primary b7" href="/registration/"> Регистрация &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}

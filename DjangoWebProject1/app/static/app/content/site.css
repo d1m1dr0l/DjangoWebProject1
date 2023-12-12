@@ -1,0 +1,211 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+    border: none;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.img {
+    width: 100px;
+    height: 50px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.button:hover {
+     transition: 0,5s;
+     background-color: #00b1ff;
+    }
+
+.b1 {
+    width: 100px;
+    height: 40px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.b1:hover {
+    transition: 0,5s;
+    background-color: #00b1ff;
+}
+
+.b2 {
+    width: 200px;
+    height: 40px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.b2:hover {
+    transition: 0,5s;
+    background-color: #00b1ff;
+}
+
+.b3 {
+    width: 210px;
+    height: 40px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.b3:hover {
+    transition: 0,5s;
+    background-color: #00b1ff;
+}
+
+.b4 {
+    width: 230px;
+    height: 40px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.b4:hover {
+    transition: 0,5s;
+    background-color: #00b1ff;
+}
+
+.b5 {
+    width: 170px;
+    height: 37px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.b5:hover {
+    transition: 0,5s;
+    background-color: #00b1ff;
+}
+
+.b6 {
+    width: 230px;
+    height: 37px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.b6:hover {
+    transition: 0,5s;
+    background-color: #00b1ff;
+}
+
+.b7 {
+    width: 150px;
+    height: 37px;
+    background-color: #2a4fff;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    min-height: 30px;
+}
+.b7:hover {
+    transition: 0,5s;
+    background-color: #00b1ff;
+}
+
+.h5 {
+    color: #3184ca,
+}
+
+.images {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    width: 500px;
+    height: 300px;
+}
+
+#foto {
+    text-align:center;
+    display: block;
+    margin: 5px;
+    padding: 0px;
+    position: relative;
+    top: 5px;
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    word-wrap: normal;
+    white-space: nowrap;
+}
